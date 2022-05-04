@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.logo {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 2;
+  /* need to check */
+}
+.logo img {
+  width: 80px;
+}
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+}
+.text-box {
+  transform: rotate(-90deg);
+  text-align: center;
+  top: 45%;
+  position: absolute;
+}
+.text-box h1 {
+  font-size: 28px;
+  font-weight: 100;
+}
+.text-box h1 {
+  margin: 2px;
+}
+hr {
+  width: 80px;
+  margin: auto;
+  height: 1px;
+  background-color: black;
+}
+.content {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.content h1 {
+  font-size: 100px;
+}
+.content p {
+  margin: 10px 0 40px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  background-color: white;
+  padding: 8px 0;
+}
+.btn img {
+  width: 30px;
+  margin-right: 15px;
+}
+
+#backVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #backVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #backVideo {
+    width: auto;
+    height: 100%;
+  }
+}
